@@ -42,7 +42,7 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
 
 Some of the methods listed are provided to you in the starter code. You should check that they work correctly, and that you understand them.
 
-### Initializers, Readers, and Writers
+<!-- ### Initializers, Readers, and Writers
 
 #### Band
 
@@ -91,12 +91,12 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Venue#concerts`
   - returns an array of all the concerts for the venue
 - `Venue#bands`
-  - returns an array of all the bands for the venue
+  - returns an array of all the bands for the venue -->
 
-#### Band
+<!-- #### Band
 
 - `Band#concerts`
-  - should return an array of all the concerts that the band has played in
+  - should return an array of all the concerts that the band has played in -->
 
 ### Aggregate and Association Methods
 
