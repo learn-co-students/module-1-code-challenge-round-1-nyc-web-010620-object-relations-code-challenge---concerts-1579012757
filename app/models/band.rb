@@ -1,5 +1,5 @@
 class Band
-    attr_accessor :name
+    attr_accessor :name, :concerts
     attr_reader :hometown
     @@all = []
 
@@ -7,9 +7,18 @@ class Band
         @name = name
         @hometown = hometown
         @@all << self
-    end
+    end 
 
     def self.all
         @@all
     end
-end
+
+#     `Band#concerts`
+#   - should return an array of all the concerts that the band has played in
+    def concerts
+     self.concert.all.select |concert|
+        self.concert
+     end 
+end 
+
+   
