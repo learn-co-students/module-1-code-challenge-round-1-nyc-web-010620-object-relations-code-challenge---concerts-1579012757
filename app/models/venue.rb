@@ -13,3 +13,23 @@ class Venue
         @@all
     end
 end
+
+def concert
+    concert.all.select do |concert|
+      concert.band == self
+    end
+  end
+
+  def venue
+    self.concert.map do |concert|
+      concert.venue
+    end
+  end
+
+  def self.all
+    @@all
+  end
+
+def concert_on ("1977") 
+     
+
