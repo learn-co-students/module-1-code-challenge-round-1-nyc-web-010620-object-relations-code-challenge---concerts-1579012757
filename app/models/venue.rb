@@ -27,3 +27,7 @@ class Venue
     end
 
 end
+
+# missing associations 
+# - `Venue#bands`
+# - returns an array of all the bands for the venue

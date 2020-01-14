@@ -10,10 +10,13 @@ class Concert
         @@all
     end
 
+    # on the right track
     def hometown_show  #- `Concert#hometown_show?` - returns `true` if the concert is in the band's hometown, `false` if it is not
+        binding.pry
         @venue.city == @band.hometown
     end
 
+    # naming is off 
     def introduction # - `Concert#introduction` - returns a string with the band's introduction for this concert
         location = Venue.all.find{|venues| venues == @venue}.city
         "Hello #{location}!!!!!, we are #{@band.name} and we're from #{@band.hometown}"
@@ -21,3 +24,8 @@ class Concert
 
 end
 
+# missing associations 
+# - `Concert#band`
+#   - should return the `Band` instance for this concert
+# - `Concert#venue`
+#   - should return the `Venue` instance for this concert

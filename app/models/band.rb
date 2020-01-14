@@ -4,8 +4,8 @@ class Band
     @@all = []
 
     def initialize(name, hometown) # `Band#initialize(name, hometown) & Band#name
+        # cute 
         @name, @hometown = name, hometown 
-    
         @@all << self
     end
 
