@@ -12,4 +12,20 @@ class Venue
     def self.all
         @@all
     end
+
+    def concerts
+        Concert.all.select{ |Concerto| Concerto.venue == self }
+    end
+
+    def bands
+        self.concerts.map{ |my_con| my_con.band }
+    end
+
+    def concert_on(date)
+        self.concerts.find{ |Goku| Goku.date == date }
+    end
+
+    def most_frequent_band  #didn't finish this
+        self.concerts.map { |DA_WORLDOO| DA_WORLDOO.band }
+    end
 end
