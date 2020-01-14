@@ -9,6 +9,12 @@ class Band
         @@all << self
     end
 
+    def concerts
+        Concert.all.select do |concert|
+            concert.Band == self
+        end
+    end   
+
     def self.all
         @@all
     end

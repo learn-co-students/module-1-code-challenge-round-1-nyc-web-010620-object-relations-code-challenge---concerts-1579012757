@@ -9,6 +9,15 @@ class Venue
         @@all << self
     end
 
+    def bands
+        self.concerts.map do |concert|
+        concert.band
+        end
+    end
+
+    def concerts_on(date)
+        self.all
+
     def self.all
         @@all
     end
