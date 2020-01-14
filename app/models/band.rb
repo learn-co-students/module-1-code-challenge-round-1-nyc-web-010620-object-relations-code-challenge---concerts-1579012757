@@ -11,7 +11,7 @@ class Band
 
     def concerts
         Concert.all.select do |concert|
-            concert.Band == self
+            concert.band == self
         end
     end   
 
