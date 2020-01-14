@@ -14,15 +14,14 @@ class Concert
     def hometown_show?
         # returns `true` if the concert is in the band's hometown, `false` if it is not
         # pseudocode
-        # if hometown.band == city.venue
-        #     true
+        @venue.city == @band.hometown
     end
 
     def introduction
         # returns a string with the band's introduction for this concert
         # fix logic 
-        #"Hello #{city.venue}!!!!!, we are #{band} and we're from #{hometown.band}"
-
+        location = Venue.all.find{|venues| venues == @venue}.city
+        "Hello #{location}!!!!!, we are #{@band.name} and we're from #{@band.hometown}"
     end
 
     def self.all

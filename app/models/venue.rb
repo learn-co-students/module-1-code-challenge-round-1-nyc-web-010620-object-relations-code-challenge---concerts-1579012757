@@ -28,12 +28,7 @@ class Venue
         # takes a date (string) as argument
         # finds and returns the first concert on that date at that venue
         # if there is no concert on that date at that venue, returns `nil`
-        # need to fix logic here
-        # Concert.all.find do |concert|
-        #     date.venue == date
-        # end
-
-
+        Concert.all.select{|concert| concert.date == date }
     end
 
     def most_frequent_band
