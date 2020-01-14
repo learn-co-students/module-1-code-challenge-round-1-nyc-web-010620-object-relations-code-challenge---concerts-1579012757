@@ -47,3 +47,13 @@ end
 # - `Band#all_introductions`
 #   - returns an array of strings representing all the introductions for this band
 #   - each introduction is in the form `"Hello {insert city name here}!!!!!, we are {insert band name here} and we're from {insert hometown here}"`
+
+
+
+
+
+
+#comments 
+# - `Band#all_introductions`
+#   - returns an array of strings representing all the introductions for this band
+#   - each introduction is in the form `"Hello {insert city name here}!!!!!, we are {insert band name here} and we're from {insert hometown here}"`

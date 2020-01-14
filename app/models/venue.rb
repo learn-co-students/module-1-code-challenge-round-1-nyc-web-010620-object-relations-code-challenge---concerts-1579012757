@@ -25,6 +25,12 @@ class Venue
         self.concerts.map{|concert| concert.band}
     end 
 
+    # lets build those out 
+    def concert_on(date)
+    end 
+
+    def most_frequent_band
+    end 
 end
 
 # - `Venue#initialize(title, city)`

@@ -28,7 +28,11 @@ class Concert
 
    # returns `true` if the concert is in the band's hometown, `false` if it is not
    # passing in a concert, if the concert is in a band's hometown, return true
+
+    # why did you decide to use self here?(good use)  
+    # maybe have some functionality to handle edge cases
    def hometown_show?
+        binding.pry
       self.venue.city == self.band.hometown 
    end 
 
