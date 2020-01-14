@@ -13,6 +13,7 @@ class Venue
         @@all
     end
 
+    
     def concerts
         Concert.all.select { |concert| concert.venue == self }
     end
@@ -36,5 +37,6 @@ class Venue
     def most_frequent_band
         bands.max_by { |band| bands.count(band) }
     end
-
 end
+
+# 

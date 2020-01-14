@@ -15,14 +15,15 @@ class Concert
     def self.all
         @@all
     end
-
+    
+    # nice clean use of ternary operators 
     def hometown_show?
         # if band.hometown == venue.city
         #     return true
         # else
         #     return false
         # end
-
+        binding.pry
         band.hometown == venue.city ? true : nil
     end
 
@@ -31,3 +32,7 @@ class Concert
     end
 
 end
+
+# doesnt have basci association methods 
+# - `Concert#band`
+# - `Concert#venue`
