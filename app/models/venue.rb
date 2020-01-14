@@ -12,4 +12,18 @@ class Venue
     def self.all
         @@all
     end
+
+    def concerts
+        Concert.all.select |concert|
+        concert.venue == self 
+    end
+
+    def bands
+        self.concerts.map |concert|
+        concert.band
+    end
+
 end
+
+
+
