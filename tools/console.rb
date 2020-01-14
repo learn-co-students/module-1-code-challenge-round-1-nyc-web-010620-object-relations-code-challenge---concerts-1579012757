@@ -13,6 +13,7 @@ venue2 = Venue.new("Vegas", "Nevada")
 venue3 = Venue.new("Super Dome", "Louisianna")
 
 con1 = Concert.new("11/11",band1,venue1)
+con4 = Concert.new("11/11",band1,venue1)
 con2 = Concert.new("9/10",band2,venue2)
 con3 = Concert.new("4/13",band3,venue3)
 
