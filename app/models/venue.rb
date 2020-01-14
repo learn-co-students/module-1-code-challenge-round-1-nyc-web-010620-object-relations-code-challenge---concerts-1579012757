@@ -22,3 +22,11 @@ class Venue
         self.concerts.map { |concert| concert.band }
     end
 end
+
+# comments 
+# - `Venue#concert_on(date)`
+# - takes a date (string) as argument
+# - finds and returns the first concert on that date at that venue
+# - if there is no concert on that date at that venue, returns `nil`
+# - `Venue#most_frequent_band`
+# - returns the band with the most concerts at the venue
